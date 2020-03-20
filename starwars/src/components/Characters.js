@@ -1,19 +1,21 @@
 import React from "react"
 import styled from "styled-components";
-import {Card, CardBody, CardText} from "reactstrap";
+import {Card, CardText} from "reactstrap";
 // import StarShips from "./StarShips";
 
-const Characters = (props) =>{
-    console.log(props)
-  
-    const FontMe = styled.h1`
-        font-family: 'Codystar', cursive;
-        margin: 4%;
+const FontMe = styled.h1`
+font-family: 'Codystar', cursive;
+margin: 4%;
 `;
-    const CardBody = styled.div`
-        border: 2px solid grey;
-        margin: 0 auto;
-    `
+const CardBody = styled.div`
+border: 2px solid grey;
+margin: 0 auto;
+`
+
+const Characters = (props) =>{
+    // console.log(props)
+  
+
 
     return(
         <Card>
