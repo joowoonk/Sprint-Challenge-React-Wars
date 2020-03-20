@@ -9,18 +9,18 @@ const Li = styled.li`
     list-style-type: none;
 `
 
-const people = [
-    "Luke Skywalker",
-    "C-3PO",
-    "R2-D2",
-    "Darth Vader",
-    "Leia Organa",
-    "Owen Lars",
-    "Beru Whitesun lars",
-    "R5-D4",
-    "Biggs Darklighter",
-    "Obi-Wan Kenobi"
-  ];
+// const people = [
+//     "Luke Skywalker",
+//     "C-3PO",
+//     "R2-D2",
+//     "Darth Vader",
+//     "Leia Organa",
+//     "Owen Lars",
+//     "Beru Whitesun lars",
+//     "R5-D4",
+//     "Biggs Darklighter",
+//     "Obi-Wan Kenobi"
+//   ];
 
 const MovieList = (props) => {
     const [characters, setCharacters] = useState([])
@@ -49,12 +49,7 @@ const MovieList = (props) => {
     const handleChange = e => {
       setSearchTerm(e.target.value);
     };
-    useEffect(() => {
-      const results = people.filter(person =>
-        person.toLowerCase().includes(searchTerm)
-      );
-      setSearchResults(results);
-    }, [searchTerm]);
+
     return (
         <div>
         <input
